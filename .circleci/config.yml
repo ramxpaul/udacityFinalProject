@@ -11,6 +11,14 @@ jobs:
       - node/install
       - checkout
       - aws-cli/setup
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
+      - run:
+          command: |
+            google-chrome --version
+            chromedriver --version
+          name: Check install
+        workflows: null
       - run:
           name: Front-End Installing Files
           command: |
