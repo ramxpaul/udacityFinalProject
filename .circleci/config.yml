@@ -27,6 +27,6 @@ jobs:
           command: |
             npm run backend:build
       - run:
-          name: Deploy Application
+          name: Deploy Application Frontend
           command: |
             npm run frontend:deploy
