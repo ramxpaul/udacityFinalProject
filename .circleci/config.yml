@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/node:17.3.0-browsers
+      - image: cimg/node:15.0.1-browsers
     steps:
       - node/install
       - checkout
