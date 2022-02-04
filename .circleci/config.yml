@@ -21,11 +21,11 @@ jobs:
       - run:
           name: Front-End Building Files
           command: |
-            npm run frontend:build
+            npm run frontendbuild
       - run:
           name: Back-End Building Files
           command: |
-            npm run backend:build
+            npm run backendbuild
       - run:
           name: Deploy Application Frontend
           command: |
