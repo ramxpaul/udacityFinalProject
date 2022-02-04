@@ -6,7 +6,6 @@ orbs:
 jobs:
   build:
     docker:
-      - image: "cimg/base:stable"
       - image: 'cimg/node:13.12-browsers'
     steps:
       - node/install
