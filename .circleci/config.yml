@@ -14,9 +14,9 @@ jobs:
       - aws-cli/setup
       - browser-tools/install-chrome
       - browser-tools/install-chromedriver
-      run:
-      name: Check install
-      command: |
+      - run:
+          name: Check install
+          command: |
             google-chrome --version
             chromedriver --version      
       - run:
