@@ -6,13 +6,14 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/node:15.0.1-browsers
+      - image: cimg/node:16.0.1-browsers
     steps:
       - node/install
       - checkout
       - aws-cli/setup
       - browser-tools/install-browser-tools
       - run: |
+          node --version
           java --version
           google-chrome --version
       - run:
