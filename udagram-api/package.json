@@ -13,7 +13,7 @@
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && npm run archive || cd www && zip -r Archive.zip . && cd ..",
     "init": "eb init udagram-api --platform node.js --region us-east-1",
     "create": "eb create --sample udagram-api-dev",
-    "deploy": "eb use udagram-api-dev && eb deploy udagram-api-dev",
+    "deploy": "npm run init && eb use udagram-api-dev && eb deploy udagram-api-dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
