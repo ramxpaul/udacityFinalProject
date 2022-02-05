@@ -20,8 +20,8 @@ jobs:
          name: Install pip
          command: |
            sudo apt update
-           curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-python get-pip.py
+           sudo apt-get install python-pkg-resources=3.3-1ubuntu1
+           sudo apt-get install python-setuptools
       - run:
          name: Install AWS dependencies
          command: |
