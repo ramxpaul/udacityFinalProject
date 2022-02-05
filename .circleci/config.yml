@@ -6,7 +6,6 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node:8.7.0
       - image: cimg/node:15.0.1-browsers
     steps:
       - node/install
@@ -14,7 +13,6 @@ jobs:
       - aws-cli/setup
       - browser-tools/install-browser-tools
       - run: |
-          node --version
           java --version
           google-chrome --version
       - run:
