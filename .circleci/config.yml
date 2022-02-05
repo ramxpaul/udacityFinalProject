@@ -20,7 +20,7 @@ jobs:
          name: Install pip
          command: |
            sudo apt update
-           sudo apt-get install python-pkg-resources=3.3-1ubuntu1
+           sudo apt-get install python-pkg-resources=3.10-1ubuntu1
            sudo apt-get install python-setuptools
       - run:
          name: Install AWS dependencies
