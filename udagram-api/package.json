@@ -1,7 +1,6 @@
 {
   "name": "udagram-api",
   "version": "2.0.0",
-  "description": "",
   "main": "src/server.js",
   "scripts": {
     "start": "node .",
@@ -11,9 +10,9 @@
     "clean": "rm -rf www/ || true",
     "archive": "cd www && 7z a Archive.zip .",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && npm run archive || cd www && zip -r Archive.zip . && cd ..",
-    "init": "eb init udagram-api2 --platform node.js --region us-east-1",
-    "create": "eb create --sample udagram-api-dev2",
-    "deploy": "npm run init && eb use udagram-api-dev2 && eb deploy udagram-api-dev2",
+    "ebinit": "eb init udagram-api2 --platform node.js --region us-east-1",
+    "ebcreate": "eb create --sample udagram-api-dev2",
+    "deploy": "npm run ebinit && eb use udagram-api-dev2 && eb deploy udagram-api-dev2",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -54,5 +53,6 @@
     "ts-node-dev": "^1.0.0-pre.32",
     "typescript": "^3.3.4000",
     "webpack-cli": "^4.9.2"
-  }
+  },
+  "description": ""
 }
