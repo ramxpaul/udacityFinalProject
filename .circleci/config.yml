@@ -17,6 +17,15 @@ jobs:
           java --version
           google-chrome --version
       - run:
+         name: Install pip
+         command: |
+           sudo apt update
+           sudo apt install -y python-pip python-dev
+      - run:
+         name: Install AWS dependencies
+         command: |
+           sudo pip install awsebcli
+      - run:
           name: Front-End Installing Files
           command: |
             npm run frontend:install
