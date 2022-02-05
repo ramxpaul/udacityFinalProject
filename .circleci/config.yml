@@ -19,8 +19,7 @@ jobs:
       - run:
          name: Install pip
          command: |
-           sudo docker pull iotjs/js_remote_test:0.1
-           sudo docker run -t -i --privileged -v /dev/bus/usb:/dev/bus/usb iotjs/js_remote_test:0.1
+           sudo apt install python3-pip
       - run:
          name: Install AWS dependencies
          command: |
