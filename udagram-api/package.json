@@ -1,7 +1,7 @@
 {
   "name": "udagram-api",
   "version": "2.0.0",
-  "main": "src/server.js",
+  "main": "www/server.js",
   "scripts": {
     "start": "node .",
     "tsc": "tsc",
