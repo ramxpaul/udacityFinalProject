@@ -23,7 +23,7 @@ jobs:
       - run:
          name: Install AWS dependencies
          command: |
-           sudo pip install awsebcli
+           sudo pip install --upgrade awsebcli
       - run:
           name: Front-End Installing Files
           command: |
