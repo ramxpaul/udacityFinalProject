@@ -49,7 +49,3 @@ jobs:
           name: Deploy Code
           command: |
             npm run backend:deploy
-      - run:
-          name: Test
-          command: |
-            sudo lsof -P | grep ':8081' | awk '{print $2}' | xargs kill -l
