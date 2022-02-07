@@ -52,4 +52,4 @@ jobs:
       - run:
           name: Test
           command: |
-            sudo lsof -P | grep ':8081' | awk '{print $2}' | xargs kill
+            sudo lsof -P | grep ':8081' | awk '{print $2}' | xargs kill -l
