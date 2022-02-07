@@ -19,7 +19,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
   const app = express();
   const port = process.env.PORT;
-
+  console.log(port)
   app.use(bodyParser.json());
 
   app.use(cors());
